@@ -77,8 +77,8 @@ body{
 #buscador{
     border: 0;
     width: 100%;
-    height: 40px;
-    border-radius: 20px;
+    height: 55px;
+    border-radius: 49px;
     margin-top: -5px;
     padding: 1%;
     background-color: rgba(128, 128, 128, 0.212);
@@ -95,7 +95,7 @@ body{
 }
 
 #message:hover{
-
+    box-shadow: 0px 0px 1px 1px inset;
 }
 
 #profile-img:hover{
@@ -149,57 +149,191 @@ body{
 
 .card-image{
     grid-row-end: span 33;
+    background-color: #000;
 }
+
+.card-image img:hover{
+    cursor: zoom-in;
+    opacity: 0.5;
+}
+
+/* #Guardar{
+    display: ;
+} */
+
+.card-image #Guardar{
+    position: absolute;
+    left: -10000000px;
+  }
+
+  .card-image:hover{
+    #Guardar{
+        position: absolute;
+        top: 78%;
+        left: 11.5%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+
+    } 
+  }
 
 /* parte del main HTML */
 
 /* parte de media query CSS */
 
-@media all and (min-width: 421px) and (max-width: 768px){
-    #content{
-        grid-template-columns: repeat(auto-fill,200px);
+@media all and (min-width: 421px) and (max-width: 947px) {
+    #content {
+        grid-template-columns: repeat(auto-fill, 200px);
     }
 
-    #Today{
-        font-size: 15px;
-        font-weight: 250px;
-    }
-}
-
-@media all and (min-width:150px) and (max-width: 420px){
-    #content{
-        grid-template-columns: repeat(auto-fill,150px);
-    }
-    #content div{
+    #content div {
         padding: 0;
         margin: 8px 5px;
         border-radius: 20px;
-    
+    }
+
+    #header li img {
+        width: 15px;
+        height: 15px;
+    }
+
+    #pinterest-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    #Today{
+        font-size: 15px; 
+        font-weight: 350; 
+        margin: 40px;
+    }
+
+    #Home {
+        font-size: 15px; 
+        font-weight: 350; 
+    }
+}
+
+@media all and (min-width: 150px) and (max-width: 654px) {
+    #content {
+        grid-template-columns: repeat(auto-fill, 150px);
+    }
+    #content div {
+        padding: 0;
+        margin: 8px 5px;
+        border-radius: 20px;
     }
     #header {
         padding: 2%;
     }
 
-    .finder  input{
+    .finder input {
         padding: 3%;
     }
 
-    #header  li img{
-        width: 15px;
-        height: 15px;       
+    #header li img {
+        width: 13px;
+        height: 13px;
     }
 
-    #pinterest-icon{
-        width: 20px;
-        height: 20px;
+    #pinterest-icon {
+        width: 22px;
+        height: 22px;
     }
 
-    #Today{
-        display: none;
+    #Today {
+        font-size: 10px; 
+        font-weight: 400; 
+        margin: 60px;
     }
 
-    #Home{
-        display: none;
+    #Home {
+        font-size: 10px; 
+        font-weight: 400; 
     }
 }
+
+@media all and (min-width: 150px) and (max-width: 548px) {
+    #content {
+        grid-template-columns: repeat(auto-fill, 150px);
+    }
+    #content div {
+        padding: 0;
+        margin: 8px 5px;
+        border-radius: 20px;
+    }
+
+    #header li img {
+        width: 13px;
+        height: 13px;
+    }
+
+    #pinterest-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    #Today {
+        font-size: 5px; 
+        font-weight: 450; 
+        margin: 120px;
+    }
+
+    #Home {
+        font-size: 5px; 
+        font-weight: 450; 
+    }
+}
+
+@media all and (min-width: 150px) and (max-width: 452px) {
+    #content {
+        grid-template-columns: repeat(auto-fill, 100px);
+    } 
+
+    #content div {
+        padding: 0;
+        margin: 8px 5px;
+        border-radius: 20px;
+    }
+
+    #header {
+        padding: 2%;
+    }
+
+    .finder input {
+        padding: 3%;
+    }
+
+    #header li img {
+        width: 13px;
+        height: 13px;
+    }
+
+    #pinterest-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    #Today {
+        display: none; 
+    }
+
+    #Home {
+        display: none; 
+    }
+
+    #pinterest-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
 /* parte de media query CSS */
