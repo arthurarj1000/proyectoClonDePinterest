@@ -130,7 +130,6 @@ body{
 /* parte del header HTML */
 
 /* parte del main HTML */
-
 #content{
     width: 100%;
     display: grid;
@@ -239,7 +238,6 @@ body{
 /* parte del main HTML */
 
 /* parte de media query CSS */
-
 @media all and (min-width: 421px) and (max-width: 947px) {
     #content {
         grid-template-columns: repeat(auto-fill, 200px);
@@ -386,6 +384,4 @@ body{
         height: 25px;
     }
 }
-
-
 /* parte de media query CSS */
