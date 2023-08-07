@@ -138,6 +138,7 @@ body{
     padding: 0;
     margin: 15px 10px;
     border-radius: 20px;
+    position: relative;
 }
 
 #content img{
@@ -157,33 +158,78 @@ body{
     opacity: 0.5;
 }
 
-/* #Guardar{
-    display: ;
-} */
-
-.card-image #Guardar{
+#Guardar{
     position: absolute;
     left: -10000000px;
-  }
+    background-color: rgb(214, 1, 1);
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    font-style: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 45px;
+    height: 50px;
+    width: 100px;
+}
 
-  .card-image:hover{
+#Guardar:hover{
+    box-shadow: 0px 0px 100px 100px #00000036 inset;
+    }
+
+#Compartir{
+    position:absolute;
+    width: 1px;
+    height: 1px;
+    left: -10000000px;
+    opacity: 0.70;
+}
+
+#Compartir:hover{
+    cursor: pointer;
+    opacity: 0.90;
+}
+
+#More{
+    position:absolute;
+    width: 1px;
+    height: 1px;
+    left: -10000000px;
+    opacity: 0.70;
+}
+
+#More:hover{
+    cursor: pointer;
+    opacity: 0.90;
+}
+
+.card-image:hover{
+    #Compartir{
+        position: absolute;
+        top: 87.75%;
+        left: 65%;
+        width: 28.5px;
+        height: 28.5px;
+        background-color: white;
+        border: 10px 10px 10px 10px;
+    }
+    #More{
+        position: absolute;
+        top: 86.8%;
+        left: 80.5%;
+        width: 35px;
+        height: 35px;
+        background-color: white;
+        border: 10px 10px 10px 10px;
+    }
     #Guardar{
         position: absolute;
-        top: 78%;
-        left: 11.5%;
+        top: 11.5%;
+        left: 73.5%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-        background-color: #555;
-        color: white;
-        font-size: 16px;
-        padding: 12px 24px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-
-    } 
-  }
-
+    }
+}
 /* parte del main HTML */
 
 /* parte de media query CSS */
